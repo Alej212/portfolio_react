@@ -1,0 +1,39 @@
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px 68px;
+
+    &_card {
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        background-color: hsl(271, 66%, 10%);
+        padding: 10px;
+
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &_content-icon {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    &_icon {
+        height: 30px;
+        width: 30px;
+        color: rgba(227, 185, 255, 0.7);
+    }
+    &_icon-xl {
+        height: 40px;
+        width: 40px;
+        color: rgba(227, 185, 255, 0.7);
+    }
+}
+

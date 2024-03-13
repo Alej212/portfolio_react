@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'InterBlack';
+    src: url('../fonts/Inter/static/Inter-Black.ttf') format('truetype');
+}
+
+@mixin cardsColor {
+    border-radius: 20px;
+    background: rgba(238, 179, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+}

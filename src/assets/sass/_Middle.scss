@@ -1,0 +1,59 @@
+.middle {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 34px;
+
+    max-width: 430px;
+
+    &_top {
+        min-width: 400px;
+        height: 270px;
+        @include cardsColor;
+        padding: 1rem;
+        flex: 2;
+    }
+    &_user-content {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &_user-img {
+        display: flex;
+        background-color: #13081B;
+        height: 16rem;
+        width: 9rem;
+        border-radius: 20px;
+    }
+
+    &_user-info {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        height: 16rem;
+    }
+
+    &_bottom {
+        min-width: 400px;
+        @include cardsColor;
+        flex: 1.5;
+    }
+
+    &_content-icon {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    &_icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    &_canvas {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1273px) {
+    .middle {
+        max-width: none;
+    }
+}

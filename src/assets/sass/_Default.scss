@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1e1e1e;
+}
+  
+h2 {
+    font-family: InterBlack;
+    font-size: 64px;
+    max-width: 780px;
+    text-align: center;
+    background: rgb(90, 60, 90);
+    background: linear-gradient(90deg, rgba(227, 185, 255, 0.7) 50%, rgba(244, 224, 255, 0.7) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-family: InterBlack;
+    font-size: 23px;
+    text-align: center;
+}
+
+h4 {
+    font-family: InterBlack;
+    font-size: 22px;
+    color: rgba(227, 185, 255, 0.7);
+    // background: rgb(32, 30, 32);
+    // background: linear-gradient(90deg, rgba(142, 109, 164, 0.7) 50%, rgba(96, 63, 113, 0.7) 100%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+}
+
+h5 {
+    font-family: InterBlack;
+    font-size: 16px;
+    color: rgba(227, 185, 255, 0.4);
+}

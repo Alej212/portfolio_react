@@ -1,0 +1,59 @@
+.left {
+    width: 320px;
+    height: 500px;
+    @include cardsColor;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    padding: 10px;
+
+    &_content-img {
+        background-color: #13081B;
+        height: 70%;
+        border-radius: 10px;
+    }
+    &_img {}
+    &_name-project-content {
+        display: flex;
+        gap: 1.5rem;
+    }
+    &_name-project {
+        background-color: #13081B;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        padding-left: 1rem;
+
+        display: flex;
+        align-items: center;
+    }
+    &_content-icon {
+        height: fit-content;
+        width: fit-content;
+        padding: .7rem;
+        border-radius: 5px;
+        background-color: #13081B;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_icon {
+        height: 30px;
+        width: 30px;
+        color: rgba(227, 185, 255, 0.7);
+    }
+    &_project-dot {
+        background-color: #13081B;
+        border-radius: 30px;
+        padding: .5rem .8rem;
+
+    }
+    &_dot {
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 100%;
+        background-color: aliceblue;
+    }
+}
