@@ -1,8 +1,6 @@
 import '../assets/sass/_Middle.scss'
 import { Icon } from '@iconify/react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
-//import * as THREE from 'three';
 import Scene from './World'
 
 export default function Middle() {
@@ -26,10 +24,8 @@ export default function Middle() {
       </div>
       <div className='middle_bottom'>
         <Canvas className='middle_canvas'>
-          <ambientLight intensity={0.5} />
           <pointLight position={[10, 0, 10]} />
           <Scene />
-          <OrbitControls />
         </Canvas>
       </div>
     </div>

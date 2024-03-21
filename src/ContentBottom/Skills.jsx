@@ -36,6 +36,7 @@ export default function Skills() {
                 <Icon icon='bi:git' className='skills_icon-xl'></Icon>
                 <Icon icon='devicon-plain:docker-wordmark' className='skills_icon-xl'></Icon>
                 <Icon icon='fa6-brands:linux' className='skills_icon-xl'></Icon>
+                <Icon icon='cib:nginx' className='skills_icon-xl'></Icon>
             </div>
         </div>
     </div>
