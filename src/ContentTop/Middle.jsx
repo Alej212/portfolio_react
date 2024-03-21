@@ -1,7 +1,7 @@
 import '../assets/sass/_Middle.scss'
 import { Icon } from '@iconify/react'
-// import { Canvas } from '@react-three/fiber'
-// import Scene from './World'
+import { Canvas } from '@react-three/fiber'
+import Scene from './World'
 
 export default function Middle() {
   return (
@@ -23,9 +23,9 @@ export default function Middle() {
         </div>
       </div>
       <div className='middle_bottom'>
-        {/* <Canvas className='middle_canvas'>
+        <Canvas className='middle_canvas'>
           <Scene />
-        </Canvas> */}
+        </Canvas>
       </div>
     </div>
   )
