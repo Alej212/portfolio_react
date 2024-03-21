@@ -24,7 +24,6 @@ export default function Middle() {
       </div>
       <div className='middle_bottom'>
         <Canvas className='middle_canvas'>
-          <pointLight position={[10, 0, 10]} />
           <Scene />
         </Canvas>
       </div>
