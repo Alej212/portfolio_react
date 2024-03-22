@@ -1,44 +1,43 @@
 import '../../assets/sass/_Rigth.scss'
-import RotatingMesh from './Sphere'
-import Box from './Box'
-import Tube from './Tube'
-import Cone from './Cone'
-import Torus from './Torus'
-//import Scene from './Linux'
 import { Canvas } from '@react-three/fiber'
+import Box from './Box.jsx'
+import Tube from './Tube.jsx'
+import Torus from './Torus.jsx'
+import Cone from './Cone.jsx'
+import Sphere from './Sphere.jsx'
 
 export default function Rigth() {
   return (
     <div className='rigth'>
         <div className='rigth_obj'>
-        <Canvas className='rigth_canvas'>
-          <Box />
-        </Canvas>
+          <Canvas>
+            <Box></Box>
+          </Canvas>
         </div>
         <div className='rigth_obj'>
-        <Canvas className='rigth_canvas'>
-          <Torus />
-        </Canvas>
+          <Canvas>
+            <Tube></Tube>
+          </Canvas>
         </div>
         <div className='rigth_obj'>
-        <Canvas className='rigth_canvas'>
-          <Cone />
-        </Canvas>
+          <Canvas>
+            <Torus></Torus>
+          </Canvas>
         </div>
         <div className='rigth_obj'>
-        <Canvas className='rigth_canvas'>
-          <Tube />
-        </Canvas>
+          <Canvas>
+            <Box></Box>
+          </Canvas>
         </div>
         <div className='rigth_obj'>
-        <Canvas className='rigth_canvas'>
-          <Box />
-        </Canvas>
+          <Canvas>
+            <Sphere />
+          </Canvas>
         </div>
         <div className='rigth_obj'>
-        <Canvas className='rigth_canvas'>
-          <RotatingMesh />
-        </Canvas>
+          <Canvas>
+            <Cone />
+          </Canvas>
         </div>
     </div>
   )

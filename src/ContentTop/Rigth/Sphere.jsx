@@ -1,19 +1,21 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 
 export default function RotatingMesh () {
   const meshRef = useRef();
+  const [time, setTime] = useState(0);
 
-  useFrame(() => {
+  useFrame((state, delta) => {
     if (meshRef.current) {
-      meshRef.current.rotation.y += 0.018;
+      setTime(time + delta);
+      meshRef.current.position.y = Math.sin(time);
     }
   });
 
   return (
-    <mesh ref={meshRef} scale={2}>
+    <mesh ref={meshRef} scale={1.5}>
       <sphereGeometry args={[1, 32, 32]} />
-      <meshBasicMaterial color={'rgb(15, 8, 30)'}/>
+      <meshNormalMaterial/>
     </mesh>
   );
 }
